@@ -9,7 +9,7 @@ pygame.init()
 # Game window dimensions
 WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Ultra Snake 3D")
+pygame.display.set_caption(" Snake Game")
 
 # Colors
 BLACK = (0, 0, 0)
