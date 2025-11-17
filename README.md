@@ -13,3 +13,7 @@
 1. Clone the repository or download the files.
 2. Install dependencies using: 
 pip install pygame
+
+## Run
+1. open terminal
+- use this command python game.py
