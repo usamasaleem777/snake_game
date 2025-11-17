@@ -443,17 +443,8 @@ class Game:
     
     def create_background(self):
         """Create a professional looking background with gradient"""
-        background = pygame.Surface((WIDTH, HEIGHT))
-        
-        # Dark gradient from top to bottom
-        for y in range(HEIGHT):
-            # Calculate gradient color (darker at bottom)
-            gradient_value = max(5, 30 - int(y / HEIGHT * 25))
-            color = (gradient_value, gradient_value, gradient_value)
-            
-            # Draw horizontal line with this color
-            pygame.draw.line(background, color, (0, y), (WIDTH, y))
-            
+        background = pygame.image.load("assets/background.jpg").convert()        
+        background = pygame.transform.scale(background, (WIDTH, HEIGHT))
         return background
     
     def create_grid_background(self):
